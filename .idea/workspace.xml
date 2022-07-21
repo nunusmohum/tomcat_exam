@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1126b5-9d48-41d6-8061-ad949c204d23" name="Changes" comment="HelloServlet.java 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/GugudanServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/Rq.java" afterDir="false" />
+    <list default="true" id="4c1126b5-9d48-41d6-8061-ad949c204d23" name="Changes" comment="getIntParam defaultValue 9단으로">
+      <change afterPath="$PROJECT_DIR$/src/webapp/gugudan.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/HelloServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/study/Java/tomcat_exam/src/webapp",
+    "last_opened_file_path": "C:/study/Java/hello-spring",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -89,7 +87,7 @@
       <workItem from="1658277688909" duration="5000" />
       <workItem from="1658291147207" duration="6360000" />
       <workItem from="1658365278952" duration="2000" />
-      <workItem from="1658371658813" duration="2981000" />
+      <workItem from="1658371658813" duration="6369000" />
     </task>
     <task id="LOCAL-00001" summary="first setting">
       <created>1658211986734</created>
@@ -112,7 +110,35 @@
       <option name="project" value="LOCAL" />
       <updated>1658215299155</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="GugudanServlet.java,&#10;Rq 클래스 추가">
+      <created>1658377941755</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658377941755</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Rq 클래스 수정">
+      <created>1658378255198</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658378255198</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Rq 클래스 수정2">
+      <created>1658378489668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658378489668</updated>
+    </task>
+    <task id="LOCAL-00007" summary="getIntParam defaultValue 9단으로">
+      <created>1658378581420</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658378581420</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +159,10 @@
     <MESSAGE value="first setting" />
     <MESSAGE value="index.html 추가" />
     <MESSAGE value="HelloServlet.java 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="HelloServlet.java 추가" />
+    <MESSAGE value="GugudanServlet.java,&#10;Rq 클래스 추가" />
+    <MESSAGE value="Rq 클래스 수정" />
+    <MESSAGE value="Rq 클래스 수정2" />
+    <MESSAGE value="getIntParam defaultValue 9단으로" />
+    <option name="LAST_COMMIT_MESSAGE" value="getIntParam defaultValue 9단으로" />
   </component>
 </project>
