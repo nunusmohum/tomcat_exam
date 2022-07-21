@@ -14,8 +14,8 @@ public class GugudanServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Rq rq = new Rq(req, resp);
 
-        int dan = rq.getIntParam("dan", 0);
-        int limit = rq.getIntParam("limit", 0);
+        int dan = rq.getIntParam("dan", 9);
+        int limit = rq.getIntParam("limit", 9);
 
         rq.appendBody("<h1>%d단</h1>\n".formatted(dan));
 
