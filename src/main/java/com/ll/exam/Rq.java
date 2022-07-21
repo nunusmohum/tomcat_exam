@@ -11,13 +11,14 @@ public class Rq {
     private HttpServletRequest req;
     private HttpServletResponse resp;
 
-    Rq(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    Rq(HttpServletRequest req, HttpServletResponse resp){
         this.req = req;
         this.resp = resp;
-        init();
-    }
-    private void init() throws IOException {
-        req.setCharacterEncoding("UTF-8");
+        try {
+            req.setCharacterEncoding("UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html; charset=utf-8");
     }
@@ -35,7 +36,11 @@ public class Rq {
         }
     }
 
-    public void appendBody(String str) throws IOException {
-        resp.getWriter().append(str);
+    public void appendBody(String str) {
+        try {
+            resp.getWriter().append(str);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
