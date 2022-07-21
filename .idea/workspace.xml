@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1126b5-9d48-41d6-8061-ad949c204d23" name="Changes" comment="index.html 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/HelloServlet.java" afterDir="false" />
+    <list default="true" id="4c1126b5-9d48-41d6-8061-ad949c204d23" name="Changes" comment="HelloServlet.java 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/GugudanServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/Rq.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/HelloServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,17 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/study/Java/tomcat_exam/src/webapp&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/study/Java/tomcat_exam/src/webapp",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
@@ -78,7 +85,11 @@
       <option name="presentableId" value="Default" />
       <updated>1658211928557</updated>
       <workItem from="1658211930060" duration="2527000" />
-      <workItem from="1658214500173" duration="728000" />
+      <workItem from="1658214500173" duration="4979000" />
+      <workItem from="1658277688909" duration="5000" />
+      <workItem from="1658291147207" duration="6360000" />
+      <workItem from="1658365278952" duration="2000" />
+      <workItem from="1658371658813" duration="2981000" />
     </task>
     <task id="LOCAL-00001" summary="first setting">
       <created>1658211986734</created>
@@ -94,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658212895995</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="HelloServlet.java 추가">
+      <created>1658215299155</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658215299155</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first setting" />
     <MESSAGE value="index.html 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.html 추가" />
+    <MESSAGE value="HelloServlet.java 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="HelloServlet.java 추가" />
   </component>
 </project>
