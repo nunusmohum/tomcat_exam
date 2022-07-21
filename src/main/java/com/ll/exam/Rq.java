@@ -11,7 +11,7 @@ public class Rq {
     private HttpServletRequest req;
     private HttpServletResponse resp;
 
-    Rq(HttpServletRequest req, HttpServletResponse resp){
+    public Rq(HttpServletRequest req, HttpServletResponse resp){
         this.req = req;
         this.resp = resp;
         try {
