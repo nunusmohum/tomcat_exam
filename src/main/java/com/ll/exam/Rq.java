@@ -8,8 +8,8 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 public class Rq {
-    HttpServletRequest req;
-    HttpServletResponse resp;
+    private HttpServletRequest req;
+    private HttpServletResponse resp;
 
     Rq(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         this.req = req;
@@ -22,8 +22,17 @@ public class Rq {
         resp.setContentType("text/html; charset=utf-8");
     }
 
-    public int getIntParam(String queryName, int defaultInt){
-        return Integer.parseInt(req.getParameter(queryName));
+    public int getIntParam(String paramName, int defaultValue){
+        String value = req.getParameter(paramName);
+        if(value == null){
+            return defaultValue;
+        }
+
+        try {
+            return Integer.parseInt(value);
+        } catch (NumberFormatException e){
+            return defaultValue;
+        }
     }
 
     public void appendBody(String str) throws IOException {
