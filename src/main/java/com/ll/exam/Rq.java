@@ -1,5 +1,6 @@
 package com.ll.exam;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -8,12 +9,13 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 public class Rq {
-    private HttpServletRequest req;
-    private HttpServletResponse resp;
+    private final HttpServletRequest req;
+    private final HttpServletResponse resp;
 
-    public Rq(HttpServletRequest req, HttpServletResponse resp){
+    public Rq(HttpServletRequest req, HttpServletResponse resp) {
         this.req = req;
         this.resp = resp;
+
         try {
             req.setCharacterEncoding("UTF-8");
         } catch (UnsupportedEncodingException e) {
@@ -23,15 +25,16 @@ public class Rq {
         resp.setContentType("text/html; charset=utf-8");
     }
 
-    public int getIntParam(String paramName, int defaultValue){
+    public int getIntParam(String paramName, int defaultValue) {
         String value = req.getParameter(paramName);
-        if(value == null){
+
+        if (value == null) {
             return defaultValue;
         }
 
         try {
             return Integer.parseInt(value);
-        } catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             return defaultValue;
         }
     }
@@ -39,6 +42,22 @@ public class Rq {
     public void appendBody(String str) {
         try {
             resp.getWriter().append(str);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void setAttr(String name, Object value) {
+        req.setAttribute(name, value);
+    }
+
+    public void view(String path) {
+        // gugudan2.jsp 에게 나머지 작업을 토스
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/jsp/" + path + ".jsp");
+        try {
+            requestDispatcher.forward(req, resp);
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1126b5-9d48-41d6-8061-ad949c204d23" name="Changes" comment="gugudan.jsp 추가">
-      <change afterPath="$PROJECT_DIR$/src/webapp/gugudan2.jsp" afterDir="false" />
+    <list default="true" id="4c1126b5-9d48-41d6-8061-ad949c204d23" name="Changes" comment="gugudan2.jsp 추가">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/dto/ArticleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/member/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/write.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/GugudanServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/GugudanServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/GugudanServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/HelloServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/Rq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/Rq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/gugudan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/gugudan.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/gugudan.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/gugudan2.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/study/Java/hello-spring",
+    "last_opened_file_path": "C:/study/Java/generic",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
@@ -90,7 +97,8 @@
       <workItem from="1658277688909" duration="5000" />
       <workItem from="1658291147207" duration="6360000" />
       <workItem from="1658365278952" duration="2000" />
-      <workItem from="1658371658813" duration="9209000" />
+      <workItem from="1658371658813" duration="10464000" />
+      <workItem from="1658707607566" duration="5008000" />
     </task>
     <task id="LOCAL-00001" summary="first setting">
       <created>1658211986734</created>
@@ -148,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658381319090</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="gugudan2.jsp 추가">
+      <created>1658384534740</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658384534740</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +189,7 @@
     <MESSAGE value="Rq 클래스 수정2" />
     <MESSAGE value="getIntParam defaultValue 9단으로" />
     <MESSAGE value="gugudan.jsp 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="gugudan.jsp 추가" />
+    <MESSAGE value="gugudan2.jsp 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="gugudan2.jsp 추가" />
   </component>
 </project>
