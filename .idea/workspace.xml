@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c1126b5-9d48-41d6-8061-ad949c204d23" name="Changes" comment="gugudan2.jsp 추가">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/dto/ArticleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/member/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/write.jsp" afterDir="false" />
+    <list default="true" id="4c1126b5-9d48-41d6-8061-ad949c204d23" name="Changes" comment="Article, Member 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/GugudanServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/DispatchServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/Rq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/Rq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/gugudan.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/gugudan2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ll/exam/article/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/jsp/usr/article/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/jsp/usr/article/write.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,20 +42,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/study/Java/generic",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/study/Java/generic&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\study\Java\tomcat_exam\src\webapp\jsp\usr\article" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
       <option name="adminPort" value="8005" />
@@ -98,7 +97,8 @@
       <workItem from="1658291147207" duration="6360000" />
       <workItem from="1658365278952" duration="2000" />
       <workItem from="1658371658813" duration="10464000" />
-      <workItem from="1658707607566" duration="5008000" />
+      <workItem from="1658707607566" duration="10316000" />
+      <workItem from="1658811892306" duration="2383000" />
     </task>
     <task id="LOCAL-00001" summary="first setting">
       <created>1658211986734</created>
@@ -163,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658384534740</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Article, Member 추가">
+      <created>1658728182946</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658728182946</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +197,7 @@
     <MESSAGE value="getIntParam defaultValue 9단으로" />
     <MESSAGE value="gugudan.jsp 추가" />
     <MESSAGE value="gugudan2.jsp 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="gugudan2.jsp 추가" />
+    <MESSAGE value="Article, Member 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="Article, Member 추가" />
   </component>
 </project>
