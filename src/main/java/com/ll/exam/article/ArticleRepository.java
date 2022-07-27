@@ -22,4 +22,39 @@ public class ArticleRepository {
 
         return id;
     }
+
+    public List<ArticleDto> findAll() {
+        return datum;
+    }
+
+    public ArticleDto findById(long id) {
+        for ( ArticleDto articleDto : datum ) {
+            if ( articleDto.getId() == id ) {
+                return articleDto;
+            }
+        }
+
+        return null;
+    }
+
+    public boolean delete(long id) {
+        for ( ArticleDto articleDto : datum ) {
+            if ( articleDto.getId() == id ) {
+                datum.remove(articleDto);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean modify(long id, String title, String body) {
+        for ( ArticleDto articleDto : datum ) {
+            if ( articleDto.getId() == id ) {
+                articleDto.setTitle(title);
+                articleDto.setBody(body);
+                return true;
+            }
+        }
+        return false;
+    }
 }
