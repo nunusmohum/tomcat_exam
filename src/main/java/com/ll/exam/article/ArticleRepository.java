@@ -4,6 +4,7 @@ import com.ll.exam.article.dto.ArticleDto;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.IntStream;
 
 public class ArticleRepository {
     private static List<ArticleDto> datum;
@@ -12,9 +13,19 @@ public class ArticleRepository {
     static {
         datum = new ArrayList<>();
         lastId = 0;
+
+        makeTestData();
     }
 
-    public long write(String title, String body) {
+    private static void makeTestData() {
+        IntStream.rangeClosed(1, 10).forEach(id -> {
+            String title = "제목%d".formatted(id);
+            String body = "내용%d".formatted(id);
+            write(title, body);
+        });
+    }
+
+    public static long write(String title, String body) {
         long id = ++lastId;
         ArticleDto newArticleDto = new ArticleDto(id, title, body);
 
@@ -23,13 +34,13 @@ public class ArticleRepository {
         return id;
     }
 
-    public List<ArticleDto> findAll() {
+    public static List<ArticleDto> findAll() {
         return datum;
     }
 
-    public ArticleDto findById(long id) {
-        for ( ArticleDto articleDto : datum ) {
-            if ( articleDto.getId() == id ) {
+    public static ArticleDto findById(long id) {
+        for (ArticleDto articleDto : datum) {
+            if (articleDto.getId() == id) {
                 return articleDto;
             }
         }
@@ -37,24 +48,20 @@ public class ArticleRepository {
         return null;
     }
 
-    public boolean delete(long id) {
-        for ( ArticleDto articleDto : datum ) {
-            if ( articleDto.getId() == id ) {
-                datum.remove(articleDto);
-                return true;
-            }
-        }
-        return false;
+    public void delete(long id) {
+        ArticleDto articleDto = findById(id);
+
+        if (articleDto == null) return;
+
+        datum.remove(articleDto);
     }
 
-    public boolean modify(long id, String title, String body) {
-        for ( ArticleDto articleDto : datum ) {
-            if ( articleDto.getId() == id ) {
-                articleDto.setTitle(title);
-                articleDto.setBody(body);
-                return true;
-            }
-        }
-        return false;
+    public void modify(long id, String title, String body) {
+        ArticleDto articleDto = findById(id);
+
+        if (articleDto == null) return;
+
+        articleDto.setTitle(title);
+        articleDto.setBody(body);
     }
 }

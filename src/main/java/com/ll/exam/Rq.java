@@ -7,7 +7,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
 
 public class Rq {
     private final HttpServletRequest req;
@@ -63,6 +62,7 @@ public class Rq {
     }
 
     public void view(String path) {
+        // gugudan2.jsp 에게 나머지 작업을 토스
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/jsp/" + path + ".jsp");
         try {
             requestDispatcher.forward(req, resp);
@@ -104,6 +104,7 @@ public class Rq {
 
     public String getPathValueByIndex(int index, String defaultValue) {
         String[] bits = req.getRequestURI().split("/");
+
         try {
             return bits[4 + index];
         } catch (ArrayIndexOutOfBoundsException e) {

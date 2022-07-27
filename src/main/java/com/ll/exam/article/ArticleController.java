@@ -59,19 +59,35 @@ public class ArticleController {
             return;
         }
 
-        boolean result = articleService.delete(id);
+        ArticleDto articleDto = articleService.findById(id);
 
-        if(!result){
-            rq.appendBody("%d번 게시물 삭제에 실패했습니다.".formatted(id));
+        if (articleDto == null) {
+            rq.appendBody("해당 글이 존재하지 않습니다.");
+            return;
         }
 
-        rq.appendBody("%d번 게시물이 삭제 되었습니다.".formatted(id));
+        articleService.delete(id);
+
+        rq.appendBody("<div>%d번 게시물이 삭제되었습니다.</div>".formatted(id));
+        rq.appendBody("<div><a href=\"/usr/article/list/free\">리스트로 이동</a></div>");
     }
 
     public void showModify(Rq rq) {
         long id = rq.getLongPathValueByIndex(1, 0);
 
-        rq.setAttr("id", id);
+        if (id == 0) {
+            rq.appendBody("번호를 입력해주세요.");
+            return;
+        }
+
+        ArticleDto articleDto = articleService.findById(id);
+
+        if (articleDto == null) {
+            rq.appendBody("해당 글이 존재하지 않습니다.");
+            return;
+        }
+
+        rq.setAttr("article", articleDto);
         rq.view("usr/article/modify");
     }
 
@@ -80,17 +96,9 @@ public class ArticleController {
         String title = rq.getParam("title", "");
         String body = rq.getParam("body", "");
 
-        if (id == 0) {
-            rq.appendBody("번호를 입력해주세요.");
-            return;
-        }
+        articleService.modify(id, title, body);
 
-        boolean result = articleService.modify(id, title, body);
-
-        if(!result){
-            rq.appendBody("%d번 게시물 수정에 실패했습니다.".formatted(id));
-        }
-
-        rq.appendBody("%d번 게시물이 수정 되었습니다.".formatted(id));
+        rq.appendBody("<div>%d번 게시물이 수정되었습니다.</div>".formatted(id));
+        rq.appendBody("<div><a href=\"/usr/article/detail/free/%d\">수정된 글로 이동</a></div>".formatted(id));
     }
 }

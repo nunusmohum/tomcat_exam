@@ -23,11 +23,11 @@ public class ArticleService {
         return articleRepository.findById(id);
     }
 
-    public boolean delete(long id) {
-        return articleRepository.delete(id);
+    public void delete(long id) {
+        articleRepository.delete(id);
     }
 
-    public boolean modify(long id, String title, String body) {
-        return articleRepository.modify(id, title, body);
+    public void modify(long id, String title, String body) {
+        articleRepository.modify(id, title, body);
     }
 }
